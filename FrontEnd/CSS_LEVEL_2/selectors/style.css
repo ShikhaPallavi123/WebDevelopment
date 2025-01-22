@@ -1,0 +1,114 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+ /* here duo to "!important" we cant change color of h1 and h3 content further */
+
+h1,h3{
+    color: #b92b27 !important;
+}
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+.upvote{
+    background-color: green;
+    color: aqua;
+}
+/* descendant selector */
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+/* also could use "nav>a" */
+nav ul li a{
+    color: palevioletred;
+}
+
+p+h3{
+    text-decoration: underline;
+}
+.upvote+button{
+    background-color: cornflowerblue;
+    color: aquamarine;
+}
+
+/* child parent relations ship, child combinator */
+
+div> input{
+    background-color: darksalmon;
+}
+
+input[type ="text"]{
+    color: red;
+}
+
+input[type ="password"]{
+    color: green;
+}
+input[type]{
+    background-color: ghostwhite;
+}
+
+/* also could be written as "div [id="myId"]" */
+#myId p{
+    color: green;
+}
+
+/* hover */
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+h3:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+/* active */
+
+button:active{
+    background-color: pink;
+}
+
+p:active{
+    font-weight: bold;
+    color: green;
+}
+
+
+/* checked */
+input[type="radio"]:checked + label{
+    font-weight: bold;
+    color: red;
+
+}
+
+/* nth-of-type */
+/* if want to selct all at a time then include div for all element */
+
+.post:nth-of-type(3){
+    background-color:blanchedalmond;
+}
+
+h1::first-letter{
+    color: green;
+}
+p::first-line{
+    color: rgb(236, 17, 83);
+}
+
+p::selection{
+    background-color: rgb(219, 199, 19);
+}
+
+h3{
+    background-color: yellow;
+}
+h3{
+    background-color: rgb(125, 125, 180);
+}
